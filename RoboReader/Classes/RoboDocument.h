@@ -58,6 +58,8 @@
 @property(nonatomic, strong, readonly) NSString *password;
 @property(nonatomic, strong, readonly) NSURL *fileURL;
 
++ (NSString *)documentsPath;
+
 + (RoboDocument *)withDocumentFilePath:(NSString *)filename password:(NSString *)phrase;
 
 + (RoboDocument *)unarchiveFromFileName:(NSString *)filename password:(NSString *)phrase;
